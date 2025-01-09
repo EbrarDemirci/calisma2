@@ -26,11 +26,10 @@ jobs:
       
     steps:
     - name: Coverage
-    
       id: jacoco
       uses: madrapps/jacoco-report@v1.3
       with:
-        paths: ${{ github.workspace }}/MetinEditoruOdev/target/site/jacoco/jacoco.xml
+        paths: ${{ github.workspace }}/MetinEditoru/target/site/jacoco/jacoco.xml
         token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/checkout@v4
     - name: Set up JDK 17
